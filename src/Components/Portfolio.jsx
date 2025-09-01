@@ -4,55 +4,56 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Work1 from "../assets/work1.jpg";
 import Work2 from "../assets/work2.jpg";
-import Work3 from "../assets/work3.jpg";
+import Work3 from "../assets/work3.png";
 import Work4 from "../assets/work4.jpg";
 import Work5 from "../assets/work5.jpg";
-import Work6 from "../assets/work6.jpg";
-
+import Work7 from "../assets/work7.png";
 const Portfolio = () => {
   const projects = [
+      {
+      name: "Sienimetsä (2025)",
+      description: "Teamwork project: Sienimetsä is a mushroom detection mobile application featuring a user profile, AI-powered camera for identifying mushrooms, a chatroom for community interaction, a comprehensive mushroom library, and a personal log for tracking your own mushroom discoveries.",
+      link: "https://github.com/orgs/Sienimetsa/repositories",
+      image: Work7,
+      type: "github",
+    },
     {
-      name: "Hyvä Tapa Harrastaa",
+      name: "Hyvä Tapa Harrastaa (2024)",
       description: "Teamwork commission: The renewal of the hooteehoo.org website, implemented using HTML, CSS, and JavaScript technologies. Usability analysis of the website and transforming detail-by-detail mobile first website. Shell scripts to master the whole content. The project included designing a new user interface and updating the graphics.",
       link: "http://www.hooteehoo.org/indexfi.html",
       image: Work1,
       type: "live",
     },
     {
-      name: "Kittydoll",
+      name: "Kittydoll (2024)",
       description: "A dressup/avatart maker made with React js, deployed on githubpages. All artwork was drawn on Adobe Photoshop",
       link: "https://sophiadun.github.io/kittydoll/#/selection",
       image: Work2,
       type: "live",
     },
     {
-      name: "Omppu ja Rane verkkokauppa",
+      name: "Omppu ja Rane verkkokauppa (2024)",
       description: "A full-stack team project for a pet supplies store, with the backend built using Spring Boot and the frontend developed with React JS. The application manages information about products, customers, orders, and manufacturers, and functions behind the scenes to support the pet supplies store.",
       link: "https://github.com/SyntaxSynergy/k24TiimiNROBackEnd",
       image: Work5,
       type: "github",
     },
     {
-      name: "Guess the flag",
+      name: "Guess the flag (2024)",
       description: "Educational React Native/ Expo application that challenges users to identify country flags fetched from the restcountries API. It incorporates Firebase for authentication, real-time database functionalities, and persistent storage, and it provides a user-friendly interface with animations and a leaderboard system.",
       link: "https://github.com/SophiaDun/GuessTheFlag",
       image: Work3,
       type: "github",
     },
     {
-      name: "Personal trainer",
+      name: "Personal trainer (2023)",
       description: "A personal trainer application for managing user data via an API. The app allows you to add users to training sessions, view upcoming sessions on the calendar, and export data to CSV for easy viewing and analysis. Built with React JS, the application utilizes an API to fetch and add user information seamlessly.",
       link: "https://github.com/SophiaDun/PersonalTrainer",
       image: Work4,
       type: "github",
     },
-    {
-      name: "Trivia game",
-      description: "Quiz Application built with Spring Boot, providing user authentication, quiz functionality, and score tracking. The application was deployed on Heroku using a PostgreSQL database.",
-      link: "https://github.com/SophiaDun/quiz-app-public",
-      image: Work6,
-      type: "github",
-    },
+ 
+ 
   ];
 
   const CustomPrevArrow = (props) => {
@@ -97,6 +98,8 @@ const Portfolio = () => {
           <span className="com material-symbols-outlined">computer</span>
           <h2 className="portfolioTitle">SELECTED WORKS</h2>
         </div>
+        <p className="swipe-hint">← Swipe to see more projects →</p>
+
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <div key={index} className="carousel-slide">

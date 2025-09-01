@@ -35,9 +35,10 @@ const Main = () => {
           <div className="skillContainer">
             <ul>
               <li>React</li>
-              <li>JavaScript (ES6+)</li>
+              <li>React Native</li>
+              <li>JavaScript </li>
               <li>HTML, CSS</li>
-              <li>SQL</li>
+               <li>Figma</li>
               <li>UI-design</li>
             </ul>
             <ul>
@@ -45,8 +46,10 @@ const Main = () => {
               <li>Spring Boot</li>
               <li>Java</li>
               <li>Git & GitHub</li>
-              <li>Figma</li>
+              <li>Scrum</li>
+              <li>SQL basics</li>
             </ul>
+            
           </div>
         </div>
       </div>
